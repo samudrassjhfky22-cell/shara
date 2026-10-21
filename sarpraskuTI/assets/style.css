@@ -1,0 +1,916 @@
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #f4f7f6;
+}
+
+/* ================= LOGIN REGISTER ================= */
+
+body.auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e6ffe6, #9ea4a0);
+}
+
+.auth .container {
+    width: 380px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.auth input,
+.auth select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f2f2f2;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #7494ec;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth button:hover {
+    background: #5d7fe0;
+}
+
+.auth a {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.auth a:hover {
+    color: #7494ec;
+}
+
+.auth p {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ================= RESET ================= */
+
+/* RESET */
+
+body{
+    background: #f4f7f6;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    background: #2563eb;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-left h2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-right{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-right a:hover{
+    opacity: 0.8;
+}
+.nav-right a i {
+    margin-right: 6px;
+}
+.nav-left h2 i {
+    margin-right: 8px;
+    color: #6c5ce7;
+}
+/* CONTAINER */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding-top: 60px;
+}
+
+/* HERO */
+
+.hero-box {
+    background: linear-gradient(135deg, #4a4faf, #353872);
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 6px 15px rgba(237, 232, 232, 0.15);
+}
+
+.hero-box h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.hero-box .desc {
+    margin-top: 10px;
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+.user-info {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.badge {
+    background: rgba(245, 245, 245, 0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* CARD */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 24px;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.cta {
+    margin-top: 25px;
+    text-align: center;
+    padding: 20px;
+    background: #f5f6ff;
+    border-radius: 12px;
+}
+
+.btn-pinjam {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 80px;
+
+    background: #163c8d;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* ================= KATALOG ================= */
+
+.katalog-wrapper{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.katalog-wrapper h1{
+    text-align: center;
+    font-size: 36px;
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.subjudul{
+    text-align: center;
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+/* CONTAINER CARD */
+
+.katalog-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.katalog-card{
+    width: 260px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+}
+
+.katalog-card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+
+.katalog-img{
+    width: 100%;
+    height: 220px;
+
+    background: #f1f5f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    background: #f8fafc;
+}
+
+.katalog-img img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    background: white;
+    padding: 10px;
+}
+
+/* TEXT */
+
+.nama-barang{
+    margin-top: 18px;
+    font-size: 20px;
+    color: #222;
+}
+
+.id-barang,
+.stok{
+    margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* BUTTON */
+
+.btn-pinjam{
+    margin-top: 18px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-pinjam:hover{
+    background: #1d4ed8;
+
+    transform: scale(1.05);
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    display: none;
+
+    position: fixed;
+    z-index: 9999;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background: white;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    position: relative;
+}
+
+.close{
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* RULES */
+
+.rules-box{
+    background: #fef2f2;
+
+    border-left: 5px solid #dc2626;
+
+    padding: 15px;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+}
+
+.rules-box h3{
+    color: #dc2626;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.modal-content input{
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.modal-content button{
+    margin-top: 25px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+/* ================= STATUS ================= */
+
+.status-wrapper{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.status-wrapper h1{
+    text-align: center;
+
+    font-size: 34px;
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.subjudul{
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 35px;
+}
+
+/* TABLE */
+
+.table-container{
+    background: white;
+
+    border-radius: 18px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.table-status{
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.table-status th{
+    background: #2563eb;
+    color: white;
+
+    padding: 18px;
+
+    font-size: 15px;
+
+    text-align: center;
+}
+
+.table-status td{
+    padding: 16px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+.table-status tr:hover{
+    background: #f8fafc;
+}
+
+/* STATUS */
+
+.status-dipinjam{
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.status-menunggu{
+    color: orange;
+    font-weight: bold;
+}
+
+.status-dikembalikan{
+    color: green;
+    font-weight: bold;
+}
+
+.status-ditolak{
+    color: red;
+    font-weight: bold;
+}
+
+/* ================= ADMIN DASHBOARD FIX ================= */
+body.dashboard{
+    background: #f4f7f6;
+    padding-top: 10px;
+}
+.navbar {
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.nav-left h2{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.nav-left small{
+    font-size: 12px;
+    opacity: 0.8;
+    display: block;
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    background: #ef4444;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.container h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+.container p{
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.card p{
+    font-size: 14px;
+    color: #666;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+/* ================= HALAMAN BARANG ================= */
+
+.dashboard-wrapper {
+    padding: 30px;
+}
+
+.dashboard-wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.dashboard-wrapper p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+/* BUTTON TAMBAH */
+.btn {
+    display: inline-block;
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+.search-box {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-box button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    opacity: 0.85;
+}
+
+.btn-reset {
+    padding: 8px 12px;
+    background: #999;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+/* TABLE */
+.table-status {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.table-status th {
+    background: #1e3a8a;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table-status td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.table-status tr:hover {
+    background: #f8fafc;
+}
+
+/* GAMBAR BARANG */
+.barang-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+/* AKSI BUTTON */
+.aksi a {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 2px;
+    transition: 0.3s;
+}
+
+/* EDIT */
+.btn-edit {
+    background: #facc15;
+    color: black;
+}
+
+.btn-edit:hover {
+    opacity: 0.8;
+}
+
+/* HAPUS */
+.btn-hapus {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-hapus:hover {
+    opacity: 0.8;
+}
+
+/* ================= MODAL TAMBAH BARANG ================= */
+
+.modal{
+    display: none;
+
+    position: fixed;
+    z-index: 9999;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background: white;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.modal-content h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #111827;
+}
+
+/* INPUT FORM */
+.modal-content input{
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* BUTTON SIMPAN */
+.modal-content button{
+    width: 100%;
+    padding: 12px;
+
+    background: #1e3a8a;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.modal-content button:hover{
+    background: #2563eb;
+}
+
+/* TOMBOL CLOSE */
+.close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.status-ditolak{
+    background: #ffdddd;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-selesai{
+    background: #ddffdd;
+    color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.icon-btn {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin: 0 3px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+/* SETUJUI */
+.icon-btn.approve {
+    background: #28a745;
+}
+
+/* TOLAK */
+.icon-btn.reject {
+    background: #dc3545;
+}
+
+/* KEMBALIKAN */
+.icon-btn.return {
+    background: #007bff;
+}
+
+/* hover efek */
+.icon-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
